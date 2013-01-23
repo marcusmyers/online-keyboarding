@@ -706,3 +706,9 @@ KeyboardJS.on('backspace', function(){
 }, function(){
 	$('#delete').css('background','#ffffff');
 });
+
+KeyboardJS.on('space', function(){
+	$('.space').css('background', 'green');
+}, function(){
+	$('.space').css('background', '#ffffff');
+});
