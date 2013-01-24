@@ -687,6 +687,48 @@ KeyboardJS.on('enter', function(){
 	$('#enter').css('background','#ffffff');
 });
 
+KeyboardJS.on('comma', function(){
+	$('#commalt').css('background', 'green');
+}, function(){
+	$('#commalt').css('background', '#ffffff');
+});
+
+KeyboardJS.on('shift + comma', function(){
+	$('#commalt').css('background', 'green');
+}, function(){
+	$('#commalt').css('background', '#ffffff');
+});
+
+KeyboardJS.on('period', function(){
+	$('#periodgt').css('background', 'green');
+}, function(){
+	$('#periodgt').css('background', '#ffffff');
+});
+
+KeyboardJS.on('shift + period', function(){
+	$('#periodgt').css('background', 'green');
+}, function(){
+	$('#periodgt').css('background', '#ffffff');
+});
+
+KeyboardJS.on('/', function(){
+	$('#slashques').css('background', 'green');
+}, function(){
+	$('#slashques').css('background', '#ffffff');
+});
+
+KeyboardJS.on('shift + /', function(){
+	$('#slashques').css('background', 'green');
+}, function(){
+	$('#slashques').css('background', '#ffffff');
+});
+
+KeyboardJS.on('space', function(){
+	$('.space').css('background', 'green');
+}, function(){
+	$('.space').css('background', '#ffffff');
+});
+
 
 // All posibilities for delete
 KeyboardJS.on('delete',function(){
