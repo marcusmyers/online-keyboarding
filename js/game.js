@@ -3,7 +3,7 @@ function randomFromTo(from, to){
     }
 
     var arrstring = new Array("a", "s", "d", "f",
-    "j", "k", "l", ";", "all", "add", 
+    "j", "k", "l", ";", "all", "add",
     "adds", "has", "lads", "javascript", "yawn", "queen",
     "red", "place", "word", "message", "many", "dog",
     "cat", "can't", "water", "places", "deliver", "messages",
@@ -27,7 +27,7 @@ function randomFromTo(from, to){
 
         var playGame;
         var stop;
-        
+
         $(".animatedbox").css("left", box_left+"px");
 
         $("#btnplay").click(function() {
@@ -60,10 +60,10 @@ function randomFromTo(from, to){
             child = $("#boxcontainer div:first-child");
             child.addClass("current");
             currentEl = $(".current");
-            
+
             for (i=0; i<children.length; i++) {
 
-                var delaytime = i * 3000;
+                var delaytime = i * 4000;
 
                 setTimeout(function() {
                     randomIndex = randomFromTo(0, arrstring.length - 1);
@@ -93,13 +93,13 @@ function randomFromTo(from, to){
                     });
                     child = child.next();
                 }, delaytime);
-            }            
+            }
         }
 
         // on ie $(window).keypress() won't  work
         $(document).keypress(function(event) {
             currentElPress = $(".current");
-            
+
             var matchSpan = currentElPress.find(".match");
             var unmatchSpan = currentElPress.find(".unmatch");
             var unmatchText = unmatchSpan.text();
@@ -128,7 +128,7 @@ function randomFromTo(from, to){
                     currentElPress.addClass("current");
                     currentEl = currentElPress;
                     score += 50;
-                    $("#score").text(score).effect("highlight", { 
+                    $("#score").text(score).effect("highlight", {
                         color: '#000000'
                     }, 1000);
                 } else {
