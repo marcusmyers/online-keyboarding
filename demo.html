@@ -2,11 +2,88 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Online Keyboarding</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />  
 </head>
 <body>
+
+<div id="menu_wrapper" class="grey">
+  <ul id="menu">
+    <li>Napoleon Area Typing Beta</li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Log Out</a></li>
+  </ul>
+</div>
+
+<div id="toolbar">
+  <div id="boxscore">
+    <span>Score:</span>&nbsp;<span id="score">0</span>
+  </div>
+
+  <div id="boxcontrol">
+    <a href="" id="btnplay">Play</a>
+  </div>
+  <div class="clear">
+      click "Play" to start the game,
+      type the text in the green animated box!
+  </div>
+</div>
+
+<div id="boxcontainer">
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+
+  <div class="animatedbox" id="last">
+      <span class="match"></span><span class="unmatch"></span>
+  </div>
+</div>
+
 <div id="container">
+  <div id="keyboard-house">
 	<!-- <textarea id="write" rows="6" cols="60"></textarea> // -->
 	<ul id="keyboard">
 		<li class="symbol" id="tildeq"><span class="off">`</span><span class="on">~</span></li>
@@ -64,10 +141,16 @@
 		<li class="right-shift lastitem" id="right-shift">shift</li>
 		<li class="space lastitem">&nbsp;</li>
 	</ul>
+  </div>
 </div>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+
+<script type="text/javascript" src="javascripts/jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="javascripts/keyboard_touch.js"></script>
+<script type="text/javascript" src="javascripts/jquery-1.5.min.js"></script>
 <script type="text/javascript" src="javascripts/keyboard.js"></script>
 <script type="text/javascript" src="javascripts/hi-light.js"></script>
+<script type="text/javascript" src="javascripts/game.js"></script>
+<script type="text/javascript" src="javascripts/jquery-ui-1.8.9.custom.min.js"></script>
+
 </body>
 </html>
