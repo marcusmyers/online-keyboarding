@@ -1,15 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Monda);
+
 * {
 margin: 0;
 padding: 0;
+font-family: Arial;
 }
+
 body {
 font: 71%/1.5 Verdana, Sans-Serif;
-background: #eee;
+background: #000046;
+background-image:url(http://napoleonareaschools.org/images/xblockn_230x200.png.pagespeed.ic.kYvoqXcR8d.png);
+background-repeat:no-repeat;
+background-position: left, right;
 }
+
+/* ======top nav===============*/
+#menu_wrapper {
+	padding:0px;
+}
+
+#menu_wrapper ul {
+	margin:0px;
+}
+
+#menu {
+	font-weight: bold;
+	border-radius: 0px 0px 5px 5px;
+	margin: 50px 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #dadada;
+	font-size: 13px;
+	height: 40px;
+	box-shadow: 0px 4px #6d6d6d;
+}
+
+#menu li:first-child, a {
+	float: left;
+	margin: 0;
+	text-decoration: none;
+	font-family:'Monda';
+	font-size: 25px;
+	display: block;
+	padding: 0 20px;
+	line-height: 40px;
+	color: #6d6d6d;			
+}
+
+#menu li {
+	float: right;
+	margin: 0;				
+}
+
+#menu li a {
+	text-decoration: none;
+	font-family:'Monda';
+	font-size: 25px;
+	display: block;
+	padding: 0 20px;
+	line-height: 40px;
+	color: #6d6d6d;
+}
+
+#menu li a:hover, #menu li.active a {
+	background-color: white;
+	padding-bottom:5px;
+	box-shadow: 0px 4px #6d6d6d;
+	border-radius: 0px 0px 5px 5px;
+	color: #6d6d6d;
+}
+/*=============start game================*/
+
+#boxcontainer {
+    background: white;
+    width: 750px;
+    height: 230px;
+    margin: 0 auto;
+    box-shadow: 0px 4px #6d6d6d;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0px;
+}
+.animatedbox {
+	color:white;
+    background: red;
+    position: absolute;
+    padding: 8px 8px 8px 8px;
+    font-size: 30px;
+    -webkit-border-radius: 30px 0px 30px 0px;
+    -moz-border-radius: 30px 0px 30px 0px;
+    border-radius: 15px 0px 5px 0px;
+    letter-spacing: 3px;
+    display: none;
+}
+.match {
+    color: #000046; /*text gains color when typed*/
+}
+.current {
+    background: green; /*shows what word needs to be typed*/
+}
+#toolbar {
+	background-color: #dadada;
+	box-shadow: 0px 4px #6d6d6d;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 750px;
+    padding: 10px 0 10px 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#boxscore {
+    float: left;
+    font-size: 30px;
+    font-family:'Monda';
+    margin-left: 15px;
+    color: #6d6d6d;
+}
+#score {
+    font-weight: bold;
+    font-family:'Monda';
+    font-size: 40px;
+    padding: 0 3px;
+    color:green;
+    text-shadow:0px 0px 11px lightgreen, 0px 0px 7px white, 0px 0px 17px black;
+}
+
+#boxcontrol {
+    float: right;
+    margin-top: 15px;
+}
+#boxcontrol a {
+    font-size: 30px;
+    font-family:'Monda';
+    color: #6d6d6d;	
+}
+.clear {
+    margin-top: 5px;
+    font-size: 15px;
+    font-family:'Monda';
+    font-weight: bold;
+    color: #6d6d6d;
+    clear: both;
+}
+/*-------------------------------------*/
+
 #container {
-margin: 100px auto;
-width: 688px;
+margin: 10px auto;
+width: auto;
 }
+
+#keyboard-house{
+	margin:0px auto;
+	width:688px;
+}
+
 #write {
 margin: 0 0 5px;
 padding: 5px;
@@ -20,7 +168,9 @@ background: #fff;
 border: 1px solid #f9f9f9;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
+border-radius: 5px;
 }
+
 #keyboard {
 margin: 0;
 padding: 0;
@@ -35,8 +185,17 @@ list-style: none;
 	text-align: center;
 	background: #fff;
 	border: 1px solid #f9f9f9;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	box-shadow: 0px 3px #6d6d6d;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 3px;
+    transition: all .1s ease;
+    	-webkit-transition:all .1s ease;
+    	-moz-transition:all .1s ease;
+	}
+
+	#keyboard li:active{
+	bottom: -3px;
 	}
 		.capslock, .tab, .left-shift {
 		clear: left;
